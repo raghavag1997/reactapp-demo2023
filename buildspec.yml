@@ -3,7 +3,7 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-        nodejs: 18:16.1
+        nodejs: 18.16.1
     commands:
       - echo Getting Started
   pre_build:
