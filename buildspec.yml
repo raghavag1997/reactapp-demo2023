@@ -18,3 +18,7 @@ phases:
     commands:
      - echo This Phase Basically used for Post Build Activities
      - echo Build completed on 'date'
+artifacts:
+  files:
+    - build/*
+  name: artifact-build
