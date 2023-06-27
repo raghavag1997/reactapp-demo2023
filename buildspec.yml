@@ -2,11 +2,19 @@ version: 0.2
 
 phases:
   install:
+    runtime-versions:
+        nodejs: 18:16.1
     commands:
-      - npm install
+      - echo Getting Started
+  pre_build:
+    commands:
+    - echo This Phase basically used for any pre Build Activities
+    - npm install
   build:
     commands:
-      - npm test
-artifacts:
-  files:
-    - '**/*'
+    - echo This Phase Basically used for any Build Activities  
+    - npm run build
+  post_build:
+    commands:
+     - echo This Phase Basically used for Post Build Activities
+     - echo Build completed on 'date'
